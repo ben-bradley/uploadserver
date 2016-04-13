@@ -1,6 +1,6 @@
 # Upload Server
 
-This app is designed to be a stupid-simple way to be able to write files to a HTTP server.
+A stupid-simple way to be able to write files to a HTTP server.
 
 ## Install
 
