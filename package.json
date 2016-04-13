@@ -1,0 +1,26 @@
+{
+  "name": "uploadserver",
+  "version": "0.0.2",
+  "description": "A simple server for uploading files",
+  "main": "index.js",
+  "dependencies": {
+    "argify": "0.0.3"
+  },
+  "devDependencies": {
+    "del": "^1.2.0",
+    "gulp": "^3.9.0",
+    "gulp-babel": "^5.1.0",
+    "gulp-nodemon": "^2.0.3",
+    "gulp-run": "^1.6.8",
+    "mocha": "^2.2.5",
+    "should": "^6.0.3"
+  },
+  "scripts": {
+    "test": "NODE_ENV=test mocha -R spec dist/test"
+  },
+  "bin": {
+    "uploadserver": "bin/uploadserver.js"
+  },
+  "author": "Ben Bradley",
+  "license": "MIT"
+}
