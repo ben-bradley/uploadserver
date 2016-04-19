@@ -14,7 +14,7 @@ var port = process.env.PORT || process.env.port || _argify2['default'].port || 0
     uploadsDir = _argify2['default'].uploadsDir || process.cwd();
 
 var server = (0, _http.createServer)(function (req, res) {
-  var filename = req.url.replace(/^\//, ''),
+  var filename = req.url.replace(/^\//, '').replace(/\.\.+\//g, ''),
       stream = (0, _fs.createWriteStream)(uploadsDir + '/' + filename);
 
   req.pipe(stream).on('error', function (err) {

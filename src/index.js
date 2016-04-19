@@ -8,7 +8,7 @@ const port = process.env.PORT || process.env.port || args.port || 0,
   uploadsDir = args.uploadsDir || process.cwd();
 
 const server = createServer((req, res) => {
-  let filename = req.url.replace(/^\//, ''),
+  let filename = req.url.replace(/^\//, '').replace(/\.\.+\//g, ''),
     stream = createWriteStream(uploadsDir + '/' + filename);
 
   req.pipe(stream)
