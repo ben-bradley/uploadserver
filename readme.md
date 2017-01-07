@@ -15,10 +15,10 @@ $ npm install -g uploadserver
 ## Start
 
 ```bash
-$ uploadserver [--port=3000] [--uploadsDir=/path/to/dir]
+$ uploadserver [--port=3000] [--uploadsDir=/path/to/dir] [--cors] [--verbose]
 ```
 
-Executing without any options starts a server on a random port that saves to the current directory.
+Executing without any options starts a server on a random port that saves to the current directory and has no cors support.
 
 ## Example use
 
@@ -34,4 +34,5 @@ saved /path/to/dir/filename.txt
 
 ## Versions
 
+- 0.2.0 - Support `--cors` and `--verbose` flags.
 - 0.1.0 - Filtered out `../` in file path to prevent saving files above the intended folder.
