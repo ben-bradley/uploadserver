@@ -1,6 +1,6 @@
 {
   "name": "uploadserver",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "A stupid-simple way to be able to write files to a HTTP server.",
   "main": "index.js",
   "dependencies": {
